@@ -16,9 +16,13 @@ Este repositório é um acervo aberto de Ciência da Computação: anotações q
 
 ## Como usar no Obsidian
 
-1. Clone ou baixe o repositório e abra a pasta `CC.md` como um *vault* no Obsidian.
+Para usar o acervo no Obsidian, instale o aplicativo e abra a pasta `CC.md` como um *cofre* (*vault*). Se você clonar o projeto com Git, a pasta oculta `.git` já estará dentro dele — não é preciso adicioná-la ao Obsidian.
+
+1. [Instale o Obsidian e clone o repositório](INSTALACAO-OBSIDIAN.md) (ou baixe o ZIP, se quiser apenas ler). Abra a pasta `CC.md` como cofre.
 2. Navegue pelas pastas ou pesquise pelas propriedades `periodo`, `disciplina` e `trilhas` (por exemplo, `[periodo: 5]` e `[disciplina: IA]`).
 3. Ao escrever, copie o [modelo de nota](templates/Nota.md) para a pasta da disciplina. Preencha as propriedades no início do arquivo e conecte conceitos com links internos.
+
+Quer compartilhar uma nota? Faça um *fork*, crie uma branch, confira os arquivos com `git status`, selecione sua anotação com `git add`, registre-a com `git commit` e envie com `git push` para abrir um *pull request*. O [guia de instalação e Git](INSTALACAO-OBSIDIAN.md) traz os comandos passo a passo para Ubuntu, Mint, Arch e outras distribuições.
 
 Os arquivos são Markdown comum: você pode lê-los e contribuir também pelo GitHub, sem usar Obsidian. Os links `[[...]]` e as propriedades são convenções de organização, não uma exigência (mas ajudam muito com a funcionalidade de visualização por grafo).
 
