@@ -8,7 +8,9 @@ Use a pasta da disciplina em `P1/` a `P9/` (por exemplo, `P5/IA/`). Para optativ
 
 Recursos gerais da universidade, sem vínculo com uma disciplina, vão em [`Acervo/`](Acervo/Acervo%20da%20universidade.md). Para materiais de uma matéria específica, crie um `.md` na pasta da disciplina, mesmo quando o arquivo estiver hospedado fora do repositório; veja o exemplo nas [orientações do Acervo](Acervo/Acervo%20da%20universidade.md).
 
-Para começar uma anotação, copie [`templates/Nota.md`](templates/Nota.md) para a pasta escolhida, renomeie e substitua os valores de exemplo. O modelo é opcional para materiais que não sejam notas, mas as propriedades ajudam a localizar qualquer arquivo Markdown.
+Para começar uma anotação, copie [`templates/Nota.md`](templates/Nota.md) para a pasta escolhida, renomeie e substitua os valores de exemplo. Para outros materiais em Markdown, mantenha as propriedades do início do arquivo: elas ajudam a localizar o conteúdo no acervo.
+
+Toda disciplina com conteúdo no acervo deve ter um sumário na própria pasta. Ao adicionar a primeira nota de uma matéria, copie o [modelo de sumário](templates/Sumario%20da%20disciplina.md) e salve-o com o nome da disciplina, como [`P4/Grafos/Grafos.md`](P4/Grafos/Grafos.md). Preencha as propriedades, apresente a matéria em poucas palavras e inclua links `[[...]]` para as notas que já existem, com uma frase sobre cada uma. Conforme surgirem novos assuntos, agrupe-os no sumário do jeito que fizer sentido para a disciplina; veja também [`P5/Psoft/Projeto de Software.md`](P5/Psoft/Projeto%20de%20Software.md). Ao criar uma nota, inclua-a no sumário da matéria e, quando houver relação, ligue-a a outros conceitos: assim o grafo não fica com notas soltas. Mantenha o sumário atualizado, sem preencher a lista com links para notas que ainda não foram escritas.
 
 Guarde imagens e outros arquivos não Markdown autorizados em `midia/` dentro da pasta da disciplina (por exemplo, `P4/BD1/midia/`). Nos `.md`, referencie-os pelo caminho relativo, como `![[midia/imagem.png]]` no Obsidian ou `![Descrição](midia/imagem.png)` em Markdown. Ao mover um arquivo, atualize todas as referências a ele. Para PDFs, vídeos e outros materiais de estudo, prefira o link público conforme as regras abaixo.
 
@@ -31,7 +33,7 @@ trilhas:
 - `disciplina`: sigla da pasta (por exemplo, `IA`); em optativas, use o nome da pasta.
 - `trilhas`: lista de áreas relacionadas. Comece por `IA`, `Engenharia de Software` ou `Infra` quando fizer sentido; outras trilhas podem surgir conforme o acervo crescer. Não é preciso forçar uma trilha em toda nota: use `trilhas: []` quando nenhuma se aplicar.
 
-Use `[[Nome da nota]]` para ligar conceitos. Prefira títulos únicos no acervo; se houver nomes repetidos, especifique o caminho, como `[[P5/IA/Busca em largura]]`. Links para notas ainda inexistentes podem indicar temas a escrever, mas confira se a nota já não existe com outro nome. Para recursos externos, use links Markdown como `[Descrição](https://exemplo.org)` e diga por que o recurso é útil.
+Use `[[Nome da nota]]` para ligar conceitos. Prefira títulos únicos no acervo; se houver nomes repetidos, especifique o caminho, como `[[P5/IA/Busca em largura]]`. Antes de criar um link, confira se a nota já existe com outro nome; no sumário da disciplina, inclua apenas notas existentes. Para recursos externos, use links Markdown como `[Descrição](https://exemplo.org)` e diga por que o recurso é útil.
 
 ## O que vale compartilhar
 
@@ -44,7 +46,7 @@ Se um material permitido não couber em `.md` (como um PDF ou vídeo), hospede-o
 ## Enviando sua contribuição
 
 1. Faça um *fork* e crie uma branch para sua mudança.
-2. Adicione ou edite os arquivos Markdown na pasta correspondente. Confira se o título, as propriedades, os links e as fontes estão corretos; no Obsidian, veja se a nota aparece na busca por período, disciplina e trilha.
+2. Adicione ou edite os arquivos Markdown na pasta correspondente. Confira se o título, as propriedades, os links e as fontes estão corretos; confira também se a nota consta no sumário da disciplina. No Obsidian, veja se a nota aparece na busca por período, disciplina e trilha.
 3. Abra um *pull request* explicando o que você adicionou ou corrigiu. Se preferir começar com uma ideia, dúvida ou erro encontrado, abra uma *issue*.
 
 Não precisa usar Obsidian para contribuir: qualquer editor de texto funciona. (mas o Obsidian ajuda bastante!)
