@@ -18,7 +18,7 @@ Mostre um exemplo, uma pequena resolução ou uma aplicação. Explique os passo
 
 ## Conexões
 
-- Relacione com [[Nome de outro conceito]] e explique a ligação.
+- Relacione com (Nome de outro conceito) e explique a ligação.
 
 ## Para saber mais/Referências
 
