@@ -7,8 +7,8 @@ Este repositório é um acervo aberto de Ciência da Computação: anotações q
 ## Como encontrar conteúdo
 
 - **Por período:** abra `P1/` até `P9/`. Cada pasta contém as disciplinas daquele período; as optativas ficam em `Optativas/`.
-- **Por disciplina:** entre na pasta da matéria, como [`P5/IA/`](P5/IA/), e procure as notas pelo título. As siglas seguem os nomes das pastas já existentes.
-- **Recursos gerais da universidade:** consulte o [`Acervo/`](Acervo/README.md) para links e materiais úteis que não pertencem a uma disciplina específica.
+- **Por disciplina:** entre na pasta da matéria, como `P5/IA/`, e procure as notas pelo título. As siglas seguem os nomes das pastas já existentes.
+- **Recursos gerais da universidade:** consulte o [Acervo](Acervo/Acervo%20da%20universidade.md) para links e materiais úteis que não pertencem a uma disciplina específica.
 - **Por trilha:** no Obsidian, use a busca pelas propriedades, por exemplo `[trilhas: IA]`, `[trilhas: Engenharia de Software]` ou `[trilhas: Infra]`. Uma nota pode pertencer a mais de uma trilha.
 - **Por conceito:** use a busca do Obsidian ou siga os links `[[...]]` entre as notas. A visualização de grafo mostra essas conexões; não é necessário instalar plugins.
 
@@ -28,6 +28,6 @@ Os arquivos são Markdown comum: você pode lê-los e contribuir também pelo Gi
 
 ## Vamos construir juntos?
 
-Você pode começar por uma explicação curta de algo que aprendeu, corrigir uma nota existente ou indicar um material útil. Antes de enviar conteúdo, leia o [guia de contribuição](CONTRIBUTING.md) e, para recursos gerais, as [orientações do Acervo](Acervo/README.md). Eles explicam onde colocar cada arquivo, como preencher as propriedades e os cuidados com provas e direitos autorais.
+Você pode começar por uma explicação curta de algo que aprendeu, corrigir uma nota existente ou indicar um material útil. Antes de enviar conteúdo, leia o [guia de contribuição](CONTRIBUTING.md) e, para recursos gerais, as [orientações do Acervo](Acervo/Acervo%20da%20universidade.md). Eles explicam onde colocar cada arquivo, como preencher as propriedades e os cuidados com provas e direitos autorais.
 
 Este é um projeto da comunidade, não um material oficial da universidade. Encontrou um erro? Abra uma *issue* ou envie uma correção.

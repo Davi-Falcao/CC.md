@@ -6,9 +6,11 @@ Não precisa escrever um capítulo inteiro: uma explicação clara, um exemplo r
 
 Use a pasta da disciplina em `P1/` a `P9/` (por exemplo, `P5/IA/`). Para optativas, crie `Optativas/Nome_da_Disciplina/` se ainda não existir. Uma nota por conceito, com nome descritivo (por exemplo, `Busca em largura.md`), facilita a busca e os links. Se o conteúdo relaciona duas matérias, escolha a pasta mais relevante e faça links para as notas da outra; não duplique o arquivo.
 
-Recursos gerais da universidade, sem vínculo com uma disciplina, vão em [`Acervo/`](Acervo/README.md). Para materiais de uma matéria específica, crie um `.md` na pasta da disciplina, mesmo quando o arquivo estiver hospedado fora do repositório; veja o exemplo nas [orientações do Acervo](Acervo/README.md).
+Recursos gerais da universidade, sem vínculo com uma disciplina, vão em [`Acervo/`](Acervo/Acervo%20da%20universidade.md). Para materiais de uma matéria específica, crie um `.md` na pasta da disciplina, mesmo quando o arquivo estiver hospedado fora do repositório; veja o exemplo nas [orientações do Acervo](Acervo/Acervo%20da%20universidade.md).
 
 Para começar uma anotação, copie [`templates/Nota.md`](templates/Nota.md) para a pasta escolhida, renomeie e substitua os valores de exemplo. O modelo é opcional para materiais que não sejam notas, mas as propriedades ajudam a localizar qualquer arquivo Markdown.
+
+Guarde imagens e outros arquivos não Markdown autorizados em `midia/` dentro da pasta da disciplina (por exemplo, `P4/BD1/midia/`). Nos `.md`, referencie-os pelo caminho relativo, como `![[midia/imagem.png]]` no Obsidian ou `![Descrição](midia/imagem.png)` em Markdown. Ao mover um arquivo, atualize todas as referências a ele. Para PDFs, vídeos e outros materiais de estudo, prefira o link público conforme as regras abaixo.
 
 ## Propriedades e conexões
 
