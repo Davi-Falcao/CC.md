@@ -2,21 +2,32 @@
 
 Não precisa escrever um capítulo inteiro: uma explicação clara, um exemplo resolvido ou uma correção já ajudam muito.
 
+## Primeira contribuição? Comece por aqui
+
+Se ainda não conhece as ferramentas, os tutoriais mostram o caminho com imagens e exemplos:
+
+- [Guia do Obsidian](GUIA-OBSIDIAN.md): como instalar o aplicativo, abrir o acervo, configurar o menu lateral, visualizar o grafo e criar links entre notas.
+- [Guia de Git](GUIA-GIT.md): como criar e acessar seu fork, cloná-lo, salvar suas mudanças e abrir uma *pull request* (PR) para o repositório principal.
+
+O Obsidian é opcional: qualquer editor de texto funciona. Para enviar uma contribuição, trabalhe na cópia do seu fork e depois proponha as mudanças ao CC.md pela PR. Os tutoriais explicam as ferramentas; as orientações abaixo ajudam a organizar o conteúdo.
+
 ## Onde colocar os arquivos
 
 Use a pasta da disciplina em `P1/` a `P9/` (por exemplo, `P5/IA/`). Para optativas, crie `Optativas/Nome_da_Disciplina/` se ainda não existir. Uma nota por conceito, com nome descritivo (por exemplo, `Busca em largura.md`), facilita a busca e os links. Se o conteúdo relaciona duas matérias, escolha a pasta mais relevante e faça links para as notas da outra; não duplique o arquivo.
 
 Recursos gerais da universidade, sem vínculo com uma disciplina, vão em [`Acervo/`](Acervo/Acervo%20da%20universidade.md). Para materiais de uma matéria específica, crie um `.md` na pasta da disciplina, mesmo quando o arquivo estiver hospedado fora do repositório; veja o exemplo nas [orientações do Acervo](Acervo/Acervo%20da%20universidade.md).
 
-Para começar uma anotação, copie [`templates/Nota.md`](templates/Nota.md) para a pasta escolhida, renomeie e substitua os valores de exemplo. Para outros materiais em Markdown, mantenha as propriedades do início do arquivo: elas ajudam a localizar o conteúdo no acervo.
+Para começar uma anotação, copie [`templates/Nota.md`](templates/Nota.md) para a pasta escolhida, renomeie e substitua os valores de exemplo. Para outros materiais em Markdown, inclua também as propriedades descritas na próxima seção: elas ajudam a localizar o conteúdo no acervo.
 
-Toda disciplina com conteúdo no acervo deve ter um sumário na própria pasta. Ao adicionar a primeira nota de uma matéria, copie o [modelo de sumário](templates/Sumario%20da%20disciplina.md) e salve-o com o nome da disciplina, como [`P4/Grafos/Grafos.md`](P4/Grafos/Grafos.md). Preencha as propriedades, apresente a matéria em poucas palavras e inclua links `[[...]]` para as notas que já existem, com uma frase sobre cada uma. Conforme surgirem novos assuntos, agrupe-os no sumário do jeito que fizer sentido para a disciplina; veja também [`P5/Psoft/Projeto de Software.md`](P5/Psoft/Projeto%20de%20Software.md). Ao criar uma nota, inclua-a no sumário da matéria e, quando houver relação, ligue-a a outros conceitos: assim o grafo não fica com notas soltas. Mantenha o sumário atualizado, sem preencher a lista com links para notas que ainda não foram escritas.
+Toda disciplina com conteúdo no acervo deve ter um sumário na própria pasta. Ao adicionar o primeiro conteúdo de uma matéria, copie o [modelo de sumário](templates/Sumario%20da%20disciplina.md) e salve-o com o nome da disciplina, como [`P4/Grafos/Grafos.md`](P4/Grafos/Grafos.md). Preencha as propriedades, apresente a matéria em poucas palavras e inclua links `[[...]]` para as notas que já existem, com uma frase sobre cada uma.
 
-Guarde imagens e outros arquivos não Markdown autorizados em `midia/` dentro da pasta da disciplina (por exemplo, `P4/BD1/midia/`). Nos `.md`, referencie-os pelo caminho relativo, como `![[midia/imagem.png]]` no Obsidian ou `![Descrição](midia/imagem.png)` em Markdown. Ao mover um arquivo, atualize todas as referências a ele. Para PDFs, vídeos e outros materiais de estudo, prefira o link público conforme as regras abaixo.
+Conforme surgirem novos assuntos, agrupe-os no sumário do jeito que fizer sentido para a disciplina; veja também [`P5/Psoft/Projeto de Software.md`](P5/Psoft/Projeto%20de%20Software.md). Ao criar uma nota, inclua-a no sumário da matéria e, quando houver relação, ligue-a a outros conceitos: assim o grafo não fica com notas soltas. Mantenha o sumário atualizado, sem preencher a lista com links para notas que ainda não foram escritas.
+
+Guarde imagens e outros anexos autorizados que acompanham as notas em `midia/` dentro da pasta da disciplina (por exemplo, `P4/BD1/midia/`). Nos `.md`, referencie-os pelo caminho relativo, como `![[midia/imagem.png]]` no Obsidian ou `![Descrição](midia/imagem.png)` em Markdown. Ao mover um arquivo, atualize todas as referências a ele. Para materiais de estudo distribuídos como PDFs ou vídeos, siga as orientações de hospedagem e links na seção **O que vale compartilhar**.
 
 ## Propriedades e conexões
 
-No início da nota, mantenha as propriedades YAML:
+No início da nota, preencha as propriedades YAML conforme o conteúdo. Este é um exemplo de anotação de IA do quinto período:
 
 ```yaml
 ---
@@ -45,8 +56,11 @@ Se um material permitido não couber em `.md` (como um PDF ou vídeo), hospede-o
 
 ## Enviando sua contribuição
 
-1. Faça um *fork* e crie uma branch para sua mudança.
-2. Adicione ou edite os arquivos Markdown na pasta correspondente. Confira se o título, as propriedades, os links e as fontes estão corretos; confira também se a nota consta no sumário da disciplina. No Obsidian, veja se a nota aparece na busca por período, disciplina e trilha.
-3. Abra um *pull request* explicando o que você adicionou ou corrigiu. Se preferir começar com uma ideia, dúvida ou erro encontrado, abra uma *issue*.
+Se precisar dos comandos para clonar o projeto, salvar alterações e enviá-las ao GitHub, siga o [guia de Git](GUIA-GIT.md).
 
-Não precisa usar Obsidian para contribuir: qualquer editor de texto funciona. (mas o Obsidian ajuda bastante!)
+1. Faça um *fork*, clone sua cópia e crie uma branch para sua mudança.
+2. Adicione ou edite os arquivos Markdown na pasta correspondente. Confira se o título, as propriedades, os links e as fontes estão corretos; confira também se a nota consta no sumário da disciplina. Se estiver usando o Obsidian, veja se a nota aparece na busca pelas propriedades que você preencheu.
+3. Confira os arquivos selecionados, registre as mudanças em um commit e envie a branch para seu fork com `git push`. Inclua o sumário e as imagens necessários, sem enviar configurações pessoais.
+4. Abra um *pull request* da sua branch no fork para a branch `main` de `UFCG-CC-md/CC.md`, explicando o que você adicionou ou corrigiu. Acompanhe a revisão e, se houver pedidos de ajuste, envie novos commits na mesma branch.
+
+Se preferir começar com uma ideia, dúvida ou erro encontrado, abra uma *issue* no repositório principal. Você não precisa ter uma nota pronta para participar.

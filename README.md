@@ -18,11 +18,11 @@ Este repositório é um acervo aberto de Ciência da Computação: anotações q
 
 Para usar o acervo no Obsidian, instale o aplicativo e abra a pasta `CC.md` como um *cofre* (*vault*). Se você clonar o projeto com Git, a pasta oculta `.git` já estará dentro dele — não é preciso adicioná-la ao Obsidian.
 
-1. [Instale o Obsidian e clone o repositório](INSTALACAO-OBSIDIAN.md) (ou baixe o ZIP, se quiser apenas ler). Siga o [tutorial de primeiros passos](GUIA-OBSIDIAN.md) para abrir a pasta `CC.md` como cofre e explorar as notas.
+1. Siga o [guia do Obsidian](GUIA-OBSIDIAN.md) para instalar o aplicativo, baixar o acervo, abrir a pasta como cofre e configurar o menu lateral para visualizar o grafo. Se preferir clonar o repositório em vez de baixar o ZIP, consulte o [guia de Git](GUIA-GIT.md).
 2. Navegue pelas pastas ou pesquise pelas propriedades `periodo`, `disciplina` e `trilhas` (por exemplo, `[periodo: 5]` e `[disciplina: IA]`).
 3. Ao escrever, copie o [modelo de nota](templates/Nota.md) para a pasta da disciplina. Preencha as propriedades no início do arquivo e conecte conceitos com links internos. Inclua a nota no sumário da disciplina; se ele ainda não existir, crie-o a partir do [modelo de sumário](templates/Sumario%20da%20disciplina.md).
 
-Quer compartilhar uma nota? Faça um *fork*, crie uma branch, confira os arquivos com `git status`, selecione sua anotação com `git add`, registre-a com `git commit` e envie com `git push` para abrir um *pull request*. O [guia de instalação e Git](INSTALACAO-OBSIDIAN.md) traz os comandos passo a passo para Ubuntu, Mint, Arch e outras distribuições.
+Quer compartilhar uma nota? O [guia de Git](GUIA-GIT.md) explica como instalar o Git, clonar seu *fork*, criar uma branch e enviar a contribuição por um *pull request*.
 
 Os arquivos são Markdown comum: você pode lê-los e contribuir também pelo GitHub, sem usar Obsidian. Para contribuir, use as propriedades e os links `[[...]]` conforme o [guia de contribuição](CONTRIBUTING.md); eles ajudam a encontrar as notas e a manter o grafo conectado.
 
