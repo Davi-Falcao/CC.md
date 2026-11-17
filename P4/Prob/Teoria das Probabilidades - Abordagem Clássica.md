@@ -4,8 +4,7 @@ periodo: 4
 disciplina: Prob
 trilhas:
 ---
-\## Abordagem Clássica:
-
+## Abordagem Clássica:
 ### Modelo Probabilístico:
 
 Todo fenômeno aleatório terá seu modelo probabilístico especificado quando estabelecermos:
@@ -43,7 +42,7 @@ Se $\Omega$ for um **Espaço Finito e Equiprovável** (Definição: [[Classifica
 
 Existem várias ferramentas de Análise Combinatória que nós ajudam a **contar** o número de elementos de certos conjuntos, sem a necessidade de listar (exibir) os elementos, por exemplo:
 
-- Príncipio Multiplicativo ou Princípio Fundamental da Contagem;
+- [[Princípio Multiplicativo]] ou Princípio Fundamental da Contagem;
 - Príncipio Aditivo,
 - Permutações,
 - Arranjos,
@@ -65,4 +64,71 @@ Dentre as ferramentas citadas, daremos ênfase às Combinações Simples.
 		- (b) Calcule a probabilidade de formar uma diretoria de 6 sócios, sendo 4
 		 brasileiros e 2 japoneses.
 	- Solução:
-		- (a)
+		- (a) Para formar uma diretoria com $6$ sócios, basta escolhê-los dentre os $15$ sócios da empresa. A quantidade de maneiras de fazer isso é dada por uma combinação simples de $15$ pessoas tomadas $6$ a $6$:
+			$$\binom{15}{6} = \frac{15!}{6!(15-6)!} = \frac{15!}{6!9!} = 5005 \text{ maneiras.}$$
+		- (b) Note que:
+			- $\Omega = \{\text{todas as possíveis diretorias com } 6 \text{ sócios}\}$;
+			- $A = \{\text{diretorias com } 4 \text{ brasileiros e } 2 \text{ japoneses}\}$.
+			- Daí, temos que:
+				$$P(A) = \frac{\#A}{\#\Omega} = \frac{\binom{10}{4}\binom{5}{2}}{\binom{15}{6}} = \frac{2100}{5005} \simeq 0{,}4196.$$
+			- **Observação:** O produto $\binom{10}{4}\binom{5}{2}$ no numerador é devido ao [[Princípio Multiplicativo]].
+
+### Espaços Amostrais Finitos:
+
+Agora, consideramos espaços amostrais **finitos, não necessariamente equiprováveis**. Ou seja, existe uma quantidade limitada de resultados, mas eles **podem ter probabilidades diferentes**.
+
+- **Espaço amostral e seus elementos:**
+	$$\Omega = \{\omega_1,\omega_2,\ldots,\omega_k\}.$$
+	- $\Omega$: conjunto de todos os resultados possíveis.
+	- $\omega_i$: um resultado específico, chamado de **ponto amostral**.
+	- $k = \#\Omega$: quantidade total de resultados distintos.
+	- $i$: índice que identifica o resultado considerado, variando de $1$ até $k$.
+	- **Exemplo:** no lançamento de um dado, $\Omega = \{1,2,3,4,5,6\}$ e $k = 6$. Podemos identificar $\omega_1 = 1$, $\omega_2 = 2$, e assim por diante.
+
+- **Evento simples e sua probabilidade:**
+	- $\{\omega_i\}$ é o evento formado por **apenas um resultado**.
+	- **Diferença:** $\omega_i$ é o resultado; $\{\omega_i\}$ é o conjunto que contém esse resultado.
+	- Associamos a cada evento simples uma probabilidade $p_i$:
+		$$p_i = P(\{\omega_i\}).$$
+	- **Exemplo:** se $\omega_2 = 2$ e $p_2 = 0{,}20$, então a probabilidade de sair a face $2$ é de $20\%$.
+
+- **Condições para as probabilidades:**
+	- (a) Nenhuma probabilidade pode ser negativa:
+		$$p_i \geq 0,\qquad i = 1,\ldots,k.$$
+	- (b) A soma das probabilidades de todos os resultados deve ser $1$, pois algum deles ocorrerá:
+		$$p_1 + p_2 + \cdots + p_k = 1.$$
+	- Essas condições também garantem que cada $p_i \leq 1$. O valor $1$ corresponde a $100\%$.
+
+- **Evento formado por vários resultados:**
+	- Seja $A \subseteq \Omega$ um evento com $r$ resultados distintos:
+		$$A = \{\omega_{j_1},\omega_{j_2},\ldots,\omega_{j_r}\}.$$
+	- $r = \#A$: quantidade de resultados que pertencem ao evento.
+	- $j_1,j_2,\ldots,j_r$: índices distintos, de $1$ até $k$, que indicam **quais resultados de $\Omega$ foram selecionados**.
+	- **Exemplo:** para o evento “sair um número par”:
+		$$A = \{2,4,6\} = \{\omega_2,\omega_4,\omega_6\}.$$
+		- Nesse caso, $r = 3$, $j_1 = 2$, $j_2 = 4$ e $j_3 = 6$.
+	- Para eventos não vazios, $1 \leq r \leq k$. O evento vazio também é permitido: $A = \varnothing$, $r = 0$ e $P(A) = 0$.
+
+- **Probabilidade de um evento:**
+	- Somamos as probabilidades dos resultados que pertencem a $A$:
+		$$P(A) = p_{j_1} + p_{j_2} + \cdots + p_{j_r} = \sum_{\ell=1}^{r} p_{j_\ell}.$$
+	- Na notação de somatório, $\ell$ percorre as $r$ posições da lista de resultados do evento.
+	- Podemos somar porque os eventos simples são **mutuamente excludentes**: em uma realização do experimento, ocorre apenas um resultado.
+
+- Exemplo 3:
+	- Considere um dado viciado com as seguintes probabilidades:
+		$$p_1 = 0{,}10,\quad p_2 = 0{,}20,\quad p_3 = 0{,}10,\quad p_4 = 0{,}25,\quad p_5 = 0{,}15,\quad p_6 = 0{,}20.$$
+	- Todas são não negativas e sua soma é $1$.
+	- Calcule a probabilidade de obter um número par.
+	- Solução:
+		- O evento desejado é $A = \{2,4,6\}$.
+		- Somamos apenas as probabilidades dessas faces:
+			$$P(A) = p_2 + p_4 + p_6 = 0{,}20 + 0{,}25 + 0{,}20 = 0{,}65 = 65\%.$$
+		- **Observação:** não usamos $\frac{\#A}{\#\Omega} = \frac{3}{6}$, pois os resultados deste dado **não são equiprováveis**.
+
+- **Relação com a abordagem clássica:**
+	- Se todos os $k$ resultados tiverem a mesma probabilidade, então $p_i = \frac{1}{k}$.
+	- Para um evento com $r$ resultados:
+		$$P(A) = \underbrace{\frac{1}{k} + \cdots + \frac{1}{k}}_{r \text{ parcelas}} = \frac{r}{k} = \frac{\#A}{\#\Omega}.$$
+	- Portanto, a abordagem clássica é um **caso particular**: em geral, somamos as probabilidades; quando elas são iguais, basta dividir a quantidade de casos favoráveis pela quantidade de casos possíveis.
+	- Veja também: [[Classificação dos Espaços Amostrais]].

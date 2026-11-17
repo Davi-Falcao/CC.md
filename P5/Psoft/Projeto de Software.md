@@ -23,10 +23,12 @@ Padrões de projeto são soluções recorrentes para problemas comuns no desenho
 Os padrões podem ser agrupados pelo tipo de problema que ajudam a resolver. 
 ## Notas desta pasta
 
-| Nota         | Categoria      | Pergunta central                                                 |
-| ------------ | -------------- | ---------------------------------------------------------------- |
-| [[Bridge]]   | Estrutural     | Como variar uma abstração e sua implementação independentemente? |
-| [[Strategy]] | Comportamental | Como trocar algoritmos sem alterar o objeto que os utiliza?      |
+| Nota          | Categoria      | Pergunta central                                                 |
+| ------------- | -------------- | ---------------------------------------------------------------- |
+| [[Bridge]]    | Estrutural     | Como variar uma abstração e sua implementação independentemente? |
+| [[Strategy]]  | Comportamental | Como trocar algoritmos sem alterar o objeto que os utiliza?      |
+| [[Singleton]] |                |                                                                  |
+| [[Comand]]    |                |                                                                  |
 
 ## Conceitos relacionados
 
