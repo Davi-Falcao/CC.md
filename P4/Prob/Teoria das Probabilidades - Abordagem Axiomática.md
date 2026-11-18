@@ -122,7 +122,17 @@ Seja $A$ e $B$ eventos quaisquer contidos em um espaço amostral $\Omega$.
 			$$P(A \cap B^c) = P(A) - P(A \cap B) = 0{,}7 - 0{,}3 = 0{,}4.$$
 		- (d) Gostar de **exatamente um** significa gostar apenas do primeiro ou apenas do segundo. Esses eventos são disjuntos, então, pelo Axioma 3:
 			$$P((A \cap B^c) \cup (A^c \cap B)) = P(A \cap B^c) + P(A^c \cap B).$$
-			- Utilizando (P3) e (P4):
+			- Utilizando (P3) e (P4), calculamos separadamente:
+				- **Apenas o primeiro:**
+					$$P(A \cap B^c) = P(A) - P(A \cap B).$$
+				- **Apenas o segundo:**
+					$$P(A^c \cap B) = P(B) - P(A \cap B).$$
+			- Somando as duas parcelas:
+				$$P((A \cap B^c) \cup (A^c \cap B)) = [P(A) - P(A \cap B)] + [P(B) - P(A \cap B)].$$
+			- O termo $2P(A \cap B)$ aparece porque subtraímos $P(A \cap B)$ **uma vez em cada parcela**, ou seja, duas vezes:
 				$$P((A \cap B^c) \cup (A^c \cap B)) = P(A) + P(B) - 2P(A \cap B).$$
+			- **Intuição:** em $P(A) + P(B)$, a situação em que Pedro gosta dos dois livros é contada duas vezes. Como queremos **exatamente um**, essa situação não deve ser contada nenhuma vez; por isso, retiramos as duas contagens.
 			- Substituindo os valores:
 				$$P((A \cap B^c) \cup (A^c \cap B)) = 0{,}7 + 0{,}4 - 2 \cdot 0{,}3 = 0{,}5.$$
+			- Também podemos visualizar o cálculo pelas duas possibilidades:
+				$$P((A \cap B^c) \cup (A^c \cap B)) = (0{,}7 - 0{,}3) + (0{,}4 - 0{,}3) = 0{,}4 + 0{,}1 = 0{,}5.$$
